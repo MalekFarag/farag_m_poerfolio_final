@@ -1,0 +1,136 @@
+//header
+
+.mainHeader{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    padding-top: 10px;
+
+    background: linear-gradient(to bottom, rgba(255,255,255, 1) 95%,rgba(255,255,255, 0) 100%);
+
+    .arrow{
+        position: absolute;
+        bottom: 100px;
+        height: 50px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .logoDiv{
+        position: relative;
+        z-index: 2;
+        height: 70%;
+        width: 50%;
+        cursor: pointer;
+        .logo{
+            height: 100%;
+            z-index: inherit;
+        }
+    }
+
+    .burgerMenu{
+        position: relative;
+        z-index: 2;
+        transition: all .25s ease .25s;
+        cursor: pointer;
+        .bLine{
+            height: 3px;
+            width: 28px;
+            border-radius: 15%;
+            background-color: rgba(0,0,0,1);
+
+            transition: all .3s ease .3s;
+        }
+        .bl2{
+            margin-top: 5px;
+        }
+        .bl3{
+            margin-top: 5px;
+        }
+
+        .colorChange{
+            background-color: white;
+        }
+        .hide{
+            opacity: 0;
+        }
+
+        .rotate1{
+            transform: rotate(45deg) translateY(11px);
+            transform-origin: center;
+        }
+        .rotate3{
+            transform: rotate(-45deg) translateY(-11px);
+            transform-origin: center;
+        }
+    }
+
+    .moveB{
+        transform: translateX(5px);
+    }
+
+    .headNav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-bottom: 250px;
+
+        background: linear-gradient(0deg, rgba(34,193,195,.2) 0%, rgb(176, 73, 97) 100%);
+        clip-path: circle(0px at 50% -10%);
+        transition: all 1s ease;
+
+        .navList{
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            .navItem{
+                font-size: 40px;
+                margin: 100px 22%;
+                padding: 8px;
+                transform: translateY(0px);
+                opacity: 0;
+                cursor: pointer;
+                color: white;
+                text-align: center;
+
+                &:hover{
+                    background: white;
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+            .navItem:nth-child(1){
+                transition: background-color .1s ease, color .1s ease, transform .1s ease-in-out .23s ,opacity .1s ease-in-out .23s;
+            }
+            .navItem:nth-child(2){
+                transition: background-color .1s ease, color .1s ease, transform .1s ease-in-out .33s ,opacity .1s ease-in-out .33s;
+            }
+            .navItem:nth-child(3){
+                transition: background-color .1s ease, color .1s ease, transform .1s ease-in-out .43s ,opacity .1s ease-in-out .43s;
+            }
+            .navItem:nth-child(4){
+                transition: background-color .1s ease, color .1s ease, transform .1s ease-in-out .53s ,opacity .1s ease-in-out .53s;
+            }
+
+            .showItem{
+            transform: translateY(10px) !important;
+            opacity: 1 !important;
+            }
+        }        
+    }
+    .showNav{
+        clip-path: circle(100% at 50% -5%);
+        pointer-events: all;
+    }
+}

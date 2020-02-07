@@ -1,0 +1,29 @@
+//about page
+
+.secAbout{
+    padding-bottom: 150px;
+    background: $main-background-color;
+    .strengths{
+        @include flex-center(column);
+
+        .fas{
+            font-size: 74px;
+            opacity: .85;
+            margin-bottom: 10px;
+        }
+        
+        .strength{
+            width: 99%;
+            margin: 0 auto;
+            margin-top: 100px;
+            h4{
+                margin-top: 20px;
+                font-size: $sub-head-sizeM;
+            }
+            p{
+                margin-top: 20px;
+                font-size: $para-sizeM;
+            }
+        }
+    }
+}

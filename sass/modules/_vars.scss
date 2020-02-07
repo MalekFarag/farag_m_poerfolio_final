@@ -1,0 +1,56 @@
+//vars
+    //mobile
+    $head-sizeM: 32px;
+    $sub-head-sizeM: 28px;
+    $para-sizeM: 18px;
+
+    $background-color: linear-gradient(0deg, rgb(34,193,195) 5%, rgb(228, 29, 62) 95%);
+    $main-background-color: white;
+
+
+
+
+//global rules
+.hidden{
+    display: none !important;
+}
+
+body{
+    width: 100%; 
+    font-family: 'Montserrat', sans-serif;
+    background: $background-color;
+    overflow-x: hidden;
+}
+
+main{
+    margin: 0 auto; 
+    min-height: 90%;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+section{
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(-5px);
+}
+
+.divide-bottom{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    transform: translateY(-40px);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+//mixins
+
+@mixin flex-center ($dir){
+    display: flex;
+    flex-direction: $dir;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

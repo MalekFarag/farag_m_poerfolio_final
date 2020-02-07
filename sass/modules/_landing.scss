@@ -1,0 +1,44 @@
+//canvas section
+
+.landing{
+    width: 100%;
+    height: 100vh;
+    background-color: $background-color;
+
+    .landingInfo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        color: white;
+
+        .landingTitle{
+            font-size: 30px;
+            line-height: 36px;
+            span{
+                font-weight: bold;
+            }
+        }
+        .viewWork{
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 26px;
+            width: 150px;
+            border: solid 2px white;
+            border-radius: 1px;
+            background: rgba(255,255,255,0);
+            cursor: pointer;
+            label{
+                cursor: pointer;
+            }
+            transition: all .2s ease;
+
+            &:hover{
+                background: rgba(255,255,255,1);
+                color:  rgb(197, 56, 84);
+            }
+        }
+    }
+}

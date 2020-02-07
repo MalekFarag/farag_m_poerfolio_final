@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico"> 
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/066bb77ccc.js" crossorigin="anonymous"></script>
+    <!-- Waypoints link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <!-- GSAP links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <!-- Google-fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Malek Farag{{pageTitle}}</title></head>
+<body>
+    <h1 class="hidden">Malek Farag's Portfolio Site</h1>
+    <!-- Lightbox -->
+    <div class="lightbox off">
+        <p class="close">x</p>
+        <img src="#" class="lightImg">
+        <p class="lightCap"></p>
+    </div>
+
+    <!-- Landing section -->
+    <div class="landing secHome">
+        <div class="landingInfo">
+            <h2 class="landingTitle">
+                Hello,<br>
+                I'm <span>Malek Farag</span>, front-end web developper</h2>
+            <div class="viewWork scroll" id='Portfolio'>
+                <label>My Work</label> 
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="mainHeader">
+
+        <!-- BLACK ARROW IN LANDING -->
+        <svg version="1.1" class="arrow scroll" id="About" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+        <style type="text/css">
+            .st0{fill:none;stroke:#FFFFFF;stroke-width:50;stroke-miterlimit:10;}
+        </style>
+        <polyline class="st0" points="934,342.88 721.8,551.19 509.6,759.5 297.4,551.19 85.2,342.88 "/>
+        </svg>
+
+
+        <!-- LOGO IN HEADER -->
+        <div class="logoDiv scroll" id='Home'>
+        <svg version="1.1" class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.25 247.25" style="enable-background:new 0 0 240.25 247.25;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}.st1{fill:none;stroke:#000000;stroke-width:19;stroke-miterlimit:10;}.line{ transition: .25s all ease .25s;}.white{stroke: #ffffff;}</style><g id="_x32_"><polyline class="st0 line" points="51.25,190 51.25,31.63 124.59,114.24 	"/><polyline class="st1 line" points="202.75,227 202.75,35 19.75,225.5 	"></g></svg>                      
+        </div>
+
+        <!-- BURGER MENU -->
+        <div class="burgerMenu">
+            <div class="bLine bl1"></div>
+            <div class="bLine bl2"></div>
+            <div class="bLine bl3"></div>
+        </div>
+
+
+        <!-- MAIN NAV -->
+        <nav class="headNav">
+            <ul class="navList">
+                    <li class="navItem scroll" id='Home'>Home</li>
+                    <li class="navItem scroll" id='About'>About</li>
+                    <li class="navItem scroll" id='Portfolio'>Portfolio</li>
+                    <li class="navItem scroll" id='Contact'>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- END OF HEADER -->
+
+    <!-- START OF MAIN CONTENT -->
+    <main class="pageHome" id='app'>
+        <section class="secAbout">
+            <h2 class="hidden">About</h2>
+            <div class="strengths">
+                <h3 class="hidden">Strengths</h3>
+                <div class="strength s1">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Speed</h4>
+                    <p>Lighting fast and efficient</p>
+                </div>
+                
+                <div class="strength s2">
+                    <i class="fas fa-bug"></i>
+                    <h4>Debugging</h4>
+                    <p>Googling error codes is my secret passion! shh...</p>
+                </div>
+    
+                <div class="strength s3">
+                    <i class="fas fa-globe-europe"></i>
+                    <h4>Creativity</h4>
+                    <p>Wait... he can design too? *surprised face*</p>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- PROJECTS NAV -->
+        <section class="secPortfolio">
+            <h2 class="hidden">Portfolio</h2>
+            <nav class="portfolioNav">
+                <ul class="projList">
+                    <li class="pItem li1 active">Cordae Album Site</li>
+                    <li class="pItem li2">Hackathon Build</li>
+                    <li class="pItem li3">Cliff Creatives</li>
+                    <li class="pItem li4">MySQL + HBS Build</li>
+                </ul>
+            </nav>
+    
+            <!-- PROJECTS (ADD MORE AND SORTING FEATURE) -->
+            <div class="projView">
+                <div class="projInfo proj1 view">
+                    <h3 class="projTitle">{{cordae.Name}}</h3>
+                        <p class="projDesc">{{cordae.Description}}</p>
+                        <div class="parMocks">
+                            {{#each cordae.Mockups}}
+                                <img src="images/portfolio/{{this}}" alt="Cordae album review site mockup" class="projMockups openBox">
+                            {{/each}}
+                        </div>
+                        
+                        <div class="appsUsed">
+                            {{#each cordae.AppsUsed}}
+                                <label class="app">{{this}}</label>
+                            {{/each}}
+                        </div>
+                        <div class="projImages">
+                            {{#each cordae.Images}}
+                        <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cordae album review site screenshot">
+                            {{/each}}
+                        </div>
+                </div>
+    
+                <div class="projInfo proj2">
+                    <h3 class="projTitle">{{hack.Name}}</h3>
+                        <p class="projDesc">{{hack.Description}}</p>
+                        <div class="parMocks">
+                            {{#each hack.Mockups}}
+                                <img src="images/portfolio/{{this}}" alt="Hackathon site mockup" class="projMockups openBox">
+                            {{/each}}
+                        </div>
+                        <div class="appsUsed">
+                            {{#each hack.AppsUsed}}
+                                <label class="app">{{this}}</label>
+                            {{/each}}
+                        </div>
+                        <div class="projImages">
+                            {{#each hack.Images}}
+                                <img src="images/portfolio/{{this}}" class="pImg openBox" alt="hackathon site screenshot">
+                            {{/each}}
+                        </div>
+                </div>
+    
+                <div class="projInfo proj3">
+                    <h3 class="projTitle">{{cliff.Name}}</h3>
+                        <p class="projDesc">{{cliff.Description}}</p>
+                        <div class="parMocks">
+                            {{#each cliff.Mockups}}
+                                <img src="images/portfolio/{{this}}" alt="Cliff creatives site mockup" class="projMockups openBox">
+                            {{/each}}
+                        </div>
+                        <div class="appsUsed">
+                            {{#each cliff.AppsUsed}}
+                                <label class="app">{{this}}</label>
+                            {{/each}}
+                        </div>
+                        <div class="projImages">
+                            {{#each cliff.Images}}
+                                <img src="images/portfolio/{{this}}" class="pImg openBox" alt="cliff creatives site screenshot">
+                            {{/each}}
+                        </div>
+                </div>
+    
+                <div class="projInfo proj4">
+                    <h3 class="projTitle">{{fav.Name}}</h3>
+                        <p class="projDesc">{{fav.Description}}</p>
+                        <div class="parMocks">
+                            {{#each fav.Mockups}}
+                                <img src="images/portfolio/{{this}}" alt="Favorite things site mockup" class="projMockups openBox">
+                            {{/each}}
+                        </div>
+                        <div class="appsUsed">
+                            {{#each fav.AppsUsed}}
+                                <label class="app">{{this}}</label>
+                            {{/each}}
+                        </div>
+                        <div class="projImages">
+                            {{#each fav.Images}}
+                        <img src="images/portfolio/{{this}}" class="pImg openBox" alt="favorite things site screenshot">
+                            {{/each}}
+                        </div>
+                </div>
+            </div>
+            <!-- END OF PROJECTS -->
+    
+            <div class="video">
+                <h2>Malek Farag - Demo Reel</h2>
+                <video src="video/demo.mp4" controls></video>
+            </div>
+        </section>
+    </main>
+    <!-- END OF MAIN CONTENT -->
+
+    <div class="divide-bottom"></div>
+
+    <!-- CONTACT FORM -->
+        <section class="secContact">
+            <h2>Contact</h2>
+            <form action="submit" method="post">
+                <input type="text" placeholder="Name" id='name' required>
+                <input type="email" name="email" id='email' placeholder="Email" required>
+                <input id='subject' name='subject' type="text" placeholder='Subject' required>
+                <textarea id='message' name='message' placeholder="Message" required></textarea>
+    
+                <button type="submit">send</button>
+            </form>
+        </section>
+    <!-- END OF CONTACT -->
+
+
+    
+    
+    <!-- FOOTER -->
+      <footer class="mainFooter">
+        <div class="social">
+            <a href="https://github.com/MalekFarag"><i class="git fab fa-github-alt"></i></a>
+            <a href="https://www.linkedin.com/in/malek-farag-1b6300182/"><i class="linkedin fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/malekfarag14/"><i class="insta fab fa-instagram"></i></a>
+        </div>
+        <nav class="footNav">
+            <ul class="navList">
+                <li class="scroll" id='Home'>Home</li>
+                <li class="scroll" id='About'>About</li>
+                <li class="scroll" id='Portfolio'>Portfolio</li>
+                <li class="scroll" id='Contact'>Contact</li>
+            </ul>
+        </nav>
+    </footer>
+    <p class="copyright">Malek Farag© 2019. All rights reserved.</p>
+    <script src="js/hamburgerMenu.js"></script>
+    <script src="js/hover-move.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
