@@ -1,0 +1,27 @@
+.skills{
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+    .skill{
+        margin: 8px 7px;
+        height: 30px;
+        background-color: whitesmoke;
+
+        .name{
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        .fill{
+            background-color: rgba(0, 0, 0, .88);
+            margin-right: auto;
+            height: 100%;
+            width: 0%;
+            transition: all 1.5s ease;
+        }
+    }
+}
