@@ -87,26 +87,25 @@ export default{
     </section>
 
     <section class="secPortfolio">
-        {{!-- feature a project then send to different url for all projects --}}
         <h2>Featured Project</h2>
 
-        {{!-- use hbs each view here! --}}
+        
         <div class="projView">
             <div class="projInfo proj1 view">
-                <h3 class="projTitle">{{cordae.Name}}</h3>
-                    <p class="projDesc">{{cordae.Description}}</p>
+                <h3 class="projTitle">Codae Site</h3>
+                    <p class="projDesc">shasbdhjasbd bhasdjhasbd asjh dbash dbhsahdb ashbd bas dhgbasvdj </p>
                     <div class="parMocks">
-                        {{#each cordae.Mockups}}
-                            <img src="images/portfolio/{{this}}" alt="Cordae album review site mockup" class="projMockups openBox">
-                        {{/each}}
+                        
+                            <img src="images/portfolio/" alt="Cordae album review site mockup" class="projMockups openBox">
+                        
                     </div>
                     
                     <div class="appsUsed">
-                        {{#each cordae.AppsUsed}}
-                            <label class="app">{{this}}</label>
-                        {{/each}}
+                        
+                            <label class="app">Apps</label>
+                        
                     </div>
-                    <a class="more" href="port{{cordae.Name}}">More Info</a>
+                    <a class="more" href="port">More Info</a>
             </div>
         </div>
 
@@ -121,32 +120,27 @@ export default{
         </div>
         </div>
         
-
-
-        {{!-- <div class="video">
-            <h2>Malek Farag - Demo Reel</h2>
-            <video src="video/demo.mp4" controls></video>
-        </div> --}}
     </section>
 
     <section class="secContact">
         <h2>Contact</h2>
         <form action="submit" method="post">
-            <input name='company' type="text" placeholder="Name" id='name' required>
-            <input name='usermail' type="email" name="email" id='email' placeholder="Email" required>
-            <input id='subject' name='subject' type="text" placeholder='Subject' required>
-            <textarea id='message' name='message' placeholder="Message" required></textarea>
+            <input type="text" placeholder="Name" id='name' required>
+            <input type="email" id='email' placeholder="Email" required>
+            <input id='subject' type="text" placeholder='Subject' required>
+            <textarea id='message' placeholder="Message" required></textarea>
             <input type="submit" value="send" class="send">
         </form>
     </section>
 </div>
-
-    
-
-
-    
-    
     `
+    // ,
+
+    // data: function(){
+    //     featuredProj:{
+    //         c
+    //     }
+    // }
 
 
 }

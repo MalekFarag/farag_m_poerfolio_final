@@ -7,7 +7,7 @@ import SubmitPage from './modules/SubmitComponent.js';
 
  const router = new VueRouter({
         routes: [
-        { path: '/home', name: 'home', component: HomePage },
+        { path: '/', name: 'home', component: HomePage },
         { path: '/submit', name: 'submit', component: SubmitPage },
         { path: '/*', name: 'error', component: ErrorPage}
         ]
