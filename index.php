@@ -131,7 +131,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="skill">
                 <p class="name">SASS</p>
-                <div class="fill 95"></div>
+                <div class="fill 97"></div>
             </div>
             <div class="skill">
                 <p class="name">JavaScript</p>
@@ -155,11 +155,11 @@ if(isset($_POST['submit'])){
             </div>
             <div class="skill">
                 <p class="name">UI Design</p>
-                <div class="fill 85"></div>
+                <div class="fill 92"></div>
             </div>
             <div class="skill">
                 <p class="name">Photoshop</p>
-                <div class="fill 75"></div>
+                <div class="fill 80"></div>
             </div>
             <div class="skill">
                 <p class="name">After Effects</p>
@@ -167,7 +167,7 @@ if(isset($_POST['submit'])){
             </div>
             <div class="skill">
                 <p class="name">3D</p>
-                <div class="fill 65"></div>
+                <div class="fill 70"></div>
             </div>
         </div>
     </div>        
@@ -185,7 +185,10 @@ if(isset($_POST['submit'])){
                             <img src="images/portfolio/mock2.jpg" alt="Cordae album review site mockup" class="projMockups openBox">
                     </div>                    
                     <div class="appsUsed">
-                            <label class="app">Apps</label>
+                            <label class="app">PHP</label>
+                            <label class="app">MYSQL</label>
+                            <label class="app">HTML5</label>
+                            <label class="app">SASS</label>
                     </div>
                     <button class="more" href="#">More Info</button>
             </div>
@@ -200,7 +203,11 @@ if(isset($_POST['submit'])){
                             <img src="images/portfolio/mock3.jpg" alt="Cordae album review site mockup" class="projMockups openBox">
                     </div>                    
                     <div class="appsUsed">
-                            <label class="app">Apps</label>
+                            <label class="app">Vue.js</label>
+                            <label class="app">PHP</label>
+                            <label class="app">MYSQL</label>
+                            <label class="app">SASS</label>
+                            <label class="app">HTML5</label>
                     </div>
                     <button class="more" href="#">More Info</button>
             </div>
@@ -291,7 +298,7 @@ if(isset($_POST['submit'])){
 
       <footer class="mainFooter">
         <div class="social">
-            <a href="https://github.com/MalekFarag"><i class="git fab fa-github-alt"></i></a>
+            <a href="https://github.com/malxvisuals"><i class="git fab fa-github-alt"></i></a>
             <a href="https://www.linkedin.com/in/malek-farag-1b6300182/"><i class="linkedin fab fa-linkedin-in"></i></a>
             <a href="https://www.instagram.com/malekfarag14/"><i class="insta fab fa-instagram"></i></a>
         </div>
