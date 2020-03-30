@@ -96,6 +96,29 @@
                 letter-spacing: 1px;
             }
         }
+
+        .s1{
+            opacity: 0;
+            transform: translateY(-15px);
+            transition: all .4s ease .3s;
+        }
+
+        .s2{
+            opacity: 0;
+            transform: translateY(-15px);
+            transition: all .4s ease .6s;
+        }
+
+        .s3{
+            opacity: 0;
+            transform: translateY(-15px);
+            transition: all .4s ease .9s;
+        }
+
+        .display{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 

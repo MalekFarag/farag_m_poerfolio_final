@@ -33,9 +33,6 @@ if(isset($_POST['submit'])){
     <script src="https://kit.fontawesome.com/066bb77ccc.js" crossorigin="anonymous"></script>
     <!-- Waypoints link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-    <!-- GSAP link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <!-- Google-fonts link -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
@@ -49,6 +46,10 @@ if(isset($_POST['submit'])){
         <p class="close">x</p>
         <img src="#" class="lightImg">
         <p class="lightCap"></p>
+    </div>
+
+    <div class="view">
+        <p class='xclose'>x</p>
     </div>
 
     <!-- landing section -->
@@ -169,42 +170,107 @@ if(isset($_POST['submit'])){
                 <div class="fill 65"></div>
             </div>
         </div>
-    </div>
-        
-
-        
+    </div>        
     </section>
 
     <section class="secPortfolio">
-        <h2>Featured Project</h2>
+        <h2>Featured Projects</h2>
 
-        
-        <div class="projView">
-            <div class="projInfo proj1 view">
-                <h3 class="projTitle">Codae Site</h3>
+        <div class="featProjWrap">
+            <div class="proj">
+                <h3 class="projTitle">Custom SportChek CMS</h3>
                     <p class="projDesc">shasbdhjasbd bhasdjhasbd asjh dbash dbhsahdb ashbd bas dhgbasvdj </p>
                     <div class="parMocks">
                         
-                            <img src="images/portfolio/" alt="Cordae album review site mockup" class="projMockups openBox">
-                        
-                    </div>
-                    
+                            <img src="images/portfolio/mock2.jpg" alt="Cordae album review site mockup" class="projMockups openBox">
+                    </div>                    
                     <div class="appsUsed">
-                        
                             <label class="app">Apps</label>
-                        
                     </div>
-                    <a class="more" href="port">More Info</a>
+                    <button class="more" href="#">More Info</button>
+            </div>
+            
+            <div class="vertDiv"></div>
+
+            <div class="proj">
+                <h3 class="projTitle">RHAC Promo Site</h3>
+                    <p class="projDesc">shasbdhjasbd bhasdjhasbd asjh dbash dbhsahdb ashbd bas dhgbasvdj </p>
+                    <div class="parMocks">
+                        
+                            <img src="images/portfolio/mock3.jpg" alt="Cordae album review site mockup" class="projMockups openBox">
+                    </div>                    
+                    <div class="appsUsed">
+                            <label class="app">Apps</label>
+                    </div>
+                    <button class="more" href="#">More Info</button>
             </div>
         </div>
 
         <div class="allProjsWrap">
-            <h2 class="allP">All Projects</h2>
+            <h2 class="allP">Other Projects</h2>
             <div class="allProjs">
+
             <div class="proj">
-                <h3 class="projTitle">Project Title</h3>
+                <p class='xclose'>x</p>
+                <h3 class="projTitle">YBN Cordae Album Review Site</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock1.jpg" alt="mockup">
+                <div class="imagesDiv">
+                    <img src="images/portfolio/cordae1.jpg" class='openBox' alt="cordae">
+                    <img src="images/portfolio/cordae2.jpg" class='openBox' alt="cordae">
+                    <img src="images/portfolio/cordae3.jpg" class='openBox' alt="cordae">
+                    <img src="images/portfolio/cordae4.jpg" class='openBox' alt="cordae">
+                </div>
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Cliff Creatives Startup Site</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
                 <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
-                <a class="more" href="#">More</a>
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">TRAA Site Redesign</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Hackathon 2020</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Olympic Medal Data Vizualization</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Gamer Link Chat App</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Envious Album Cover + Photoshoot</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
+            </div>
+
+            <div class="proj">
+                <h3 class="projTitle">Rekthehalls Live Show Recap Video</h3>
+                <p class='projDesc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis cupiditate, tenetur, obcaecati itaque vitae dolores, et placeat expedita aut repellendus facilis vel quasi cum quis tempore accusantium. Eos, aspernatur officiis.</p>
+                <img class="projMock" src="images/portfolio/mock2.jpg" alt="mockup">
+                <button class="more" href="#">More</button>
             </div>
         </div>
         </div>

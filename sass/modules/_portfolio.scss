@@ -1,47 +1,24 @@
 // portfolio sec
 .secPortfolio{
     background: $main-background-color;
+    padding-top: 40px;
 
     h2{
         font-size: 24px;
         width: 100%;
         text-align: center;
     }
-    .portfolioNav{
-        .projList{
-            @include flex-center(row);
-            justify-content: space-evenly;
-            .pItem{
-                font-size: 18px;
-                border-bottom: solid 3px rgba(0,0,0,0);
-                padding: 7px;
-                margin: 6px;
-                cursor: pointer;
 
-                transition: all .18s ease;
-                &:hover{
-                    color: white;
-                    background-color: rgba(0,0,0,.85);
-                    border-bottom: solid 3px rgba(0,0,0,0);
-                    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.4);
-
-                    bottom: 2px;
-                }
-            }
-            .active{
-                color: white;
-                background-color: rgba(0,0,0,.85);
-                border-bottom: solid 3px rgba(0,0,0,0);
-                box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.4);
-
-                bottom: 2px;
-        }
-        }
-    }
-
-    .projView{
+    .featProjWrap{
         margin: 100px auto;
-        .projInfo{
+
+        .vertDiv{
+            margin: 60px auto;
+            width: 3px;
+            height: 150px;
+            background-color: black;
+        }
+        .proj{
             @include flex-center(column);
             background-color: white;
             box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
@@ -68,9 +45,6 @@
             .projMockups{
                 margin-top: 20px;
                 width: 100%;
-            }
-            .projMockups:nth-child(2){
-                display: none;
             }
             .appsUsed{
                 width: 100%;
@@ -109,24 +83,21 @@
                 margin: 5px;
             }
             .more{
+                font-family: 'Montserrat', sans-serif;
                 color: rgba(0, 0, 0, 0.9);
+                background: rgba(0, 0, 0, 0);
+                border: none;
                 margin-top: 30px;
                 padding-top: 30px;
                 border-top: solid 3px rgba(0, 0, 0, 0.9);
                 text-decoration: none;
                 font-weight: bolder;
                 transition: all .2s ease;
+                cursor: pointer;
                 &:hover{
-                    // border-bottom: solid 2px rgba(0, 0, 0, 0.9);
                     box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.9);
                 }
             }
-        }
-        
-        .view{
-            position: relative;
-            opacity: 1;
-            transform: scale(1) translateY(0px); 
         }
     }
 
@@ -148,7 +119,7 @@
     }
 
     .allP{
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     .allProjs{
@@ -157,12 +128,14 @@
         flex-wrap: wrap;
         align-content: space-evenly;
         margin: 50px auto;
+        width: 100%;
+
         
 
         .proj{
             display: flex;
             flex-direction: column;
-            margin: 20px auto;
+            margin: 10px auto;
             max-width: 35%;
             padding: 15px 20px;
             text-align: center;
@@ -170,30 +143,42 @@
             background-color: white;
             box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
             transition: all .3s ease;
-            &:hover{
-                transform: scale(1.05);
-                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+
+            .xclose{
+                display: none;
             }
 
             .projTitle{
-                font-size: 24px;
+                font-size: 18px;
+            }
+
+            .projDesc{
+                display: none;
             }
 
             .projMock{
-                margin-top: 20px;
+                margin: 10px auto;
                 width: 100%;
             }
+            .imagesDiv{
+                display: none;
+            }
             .more{
+                text-align: center;
                 color: rgba(0, 0, 0, 0.9);
-                margin-top: 20px;
+                font-family: 'Montserrat', sans-serif;
+                background: rgba(0, 0, 0, 0);
+                border: none;
+                margin-top: auto;
                 margin-left: auto;
                 margin-right: auto;
-                width: 25%;
+                margin-bottom: 10px;
                 padding-top: 20px;
                 border-top: solid 3px rgba(0, 0, 0, 0.9);
                 text-decoration: none;
                 font-weight: bolder;
                 transition: all .2s ease;
+                cursor: pointer;
                 &:hover{
                     box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.9);
                 }
@@ -204,22 +189,87 @@
     }
 }
 
+.view{
+    opacity: 0;
+    pointer-events: none;
+
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+
+    transition: all .2s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    .xclose{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 65px;
+        right: 15px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .projTitle{
+        font-size: 28px;
+        margin: 20px auto;
+    }
+
+    .projDesc{
+        display: block;
+        line-height: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-overflow: ellipsis;
+    }
+    .projMock{
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .imagesDiv{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: auto;
+        margin: 5px auto;
+
+        img{
+            height: 125px;
+            margin-right: 3px;
+        }
+    }
+
+    .more{
+        display: none;
+    }
+}
+
+.viewShow{
+    opacity: 1;
+    pointer-events: all;
+}
+
 @media only screen and (min-width: 700px){
     .secPortfolio{
         h2{
             font-size: 30px;
-        }
-        .projInfo{
-            .parMocks{
-                max-width: 1000px;
-                .projMockups{
-                    width: 40%;
-                }
-                .projMockups:nth-child(2){
-                    display: block;
-                    order: -1;
-                }
-            }
         }
 
         .allProjsWrap{
@@ -229,9 +279,46 @@
         .allProjs{
             max-width: 1200px;
             .proj{
-                max-width: 27%;
+                max-width: 20%;
                 margin: 10px auto;
             }
         }
     }
+
+    .view{
+        top: 0;
+        .imagesDiv{
+            justify-content: center;
+            img{
+                height: 175px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1230px){
+    .secPortfolio{
+        .featProjWrap{
+            max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .vertDiv{
+            display: none;
+        }
+        .proj{
+            max-width: 500px !important;
+        }
+    }
+
+    .view{
+        .imagesDiv{
+            img{
+                margin-right: 0px;
+                margin: 5px;
+            }
+        }
+    }
+    }
+    
 }

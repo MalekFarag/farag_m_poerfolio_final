@@ -9,8 +9,6 @@ const lightbox   = document.querySelector('.lightbox'),
       function openLightbox(){
         targetImg = this.src.split('portfolio/')[1];
         targetCaption = this.alt;
-
-        console.log('Image src + alt' + targetImg + targetCaption);
         
         lightbox.classList.remove('off');
         caption.textContent = targetCaption;
@@ -25,29 +23,25 @@ const lightbox   = document.querySelector('.lightbox'),
       clickables.forEach( box => box.addEventListener('click', openLightbox));
       lightbox.addEventListener('click', closeLightbox);
       close.addEventListener('click', closeLightbox);
-      
 
 
+      //functions to expand projects
+      const moreBut = document.querySelectorAll('.more'),
+            viewDiv = document.querySelector('.view');
 
+      function viewProject(){
+        let projDiv = this.parentElement;
+        viewDiv.innerHTML = "<p class='xclose'>x</p>" + projDiv.innerHTML;
 
-// portfolio switch functions
-    const projList = document.querySelectorAll('.projList li'),
-          projDivs = document.querySelectorAll('.projView .projInfo');
+        viewDiv.classList.toggle('viewShow');
+      }
 
-          function listClick(e){
-              let itemName = this.classList[1];
-              projList.forEach(item => item.classList.remove('active'));
-              document.querySelector('.' + itemName).classList.add('active');
-          }
+      moreBut.forEach( but => but.addEventListener('click', viewProject));
 
-          function projSwap(e){
-            let divName = this.classList[1].split('li')[1];
-            let projName = '.proj' + divName;
-
-            projDivs.forEach(div => div.classList.remove('view'));
-
-            document.querySelector(projName).classList.add('view');
-          }
-
-          projList.forEach( item => item.addEventListener('click', listClick));
-          projList.forEach( item => item.addEventListener('click', projSwap));
+      //close opened project
+      const xbutton = document.querySelectorAll('.xclose');
+      function closeProj(){
+        debugger;
+        viewDiv.classList.remove('viewShow');
+      }
+      xbutton.forEach( xbut => xbut.addEventListener('click', closeProj));

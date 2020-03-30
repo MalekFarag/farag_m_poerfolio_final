@@ -60,7 +60,9 @@ const nav        = document.querySelector('.headNav'),
 
         navItems.forEach( item =>{
             item.classList.remove('showItem');
-        })
+        });
+
+        viewDiv.classList.remove('viewShow');
 
 
         //scroll to
