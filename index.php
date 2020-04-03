@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/favicon.ico"> 
     <!-- css link -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <!-- font-awesome link -->
     <script src="https://kit.fontawesome.com/066bb77ccc.js" crossorigin="anonymous"></script>
     <!-- Waypoints link -->
