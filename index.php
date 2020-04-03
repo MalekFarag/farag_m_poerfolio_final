@@ -106,13 +106,13 @@ if(isset($_POST['submit'])){
             <div class="strength s2">
                 <i class="fas fa-bug"></i>
                 <h4>Debugging</h4>
-                <p>Googling error codes is my secret passion! shh...</p>
+                <p>Forums, MDN, Googling error codes... is what I do</p>
             </div>
 
             <div class="strength s3">
                 <i class="fas fa-globe-europe"></i>
                 <h4>Versitile</h4>
-                <p>Adaptable to different languages and plugins so team work is a breeze</p>
+                <p>Adaptable to different languages, plugins and tasks so team work is a breeze</p>
             </div>
         </div>
 
@@ -182,7 +182,9 @@ if(isset($_POST['submit'])){
         <div class="featProjWrap">
             <div class="proj">
                 <h3 class="projTitle">Custom SportChek CMS</h3>
-                    <p class="projDesc">SportChek themed pure PHP custom content management system. Filter through 35 products pulled from a MySql database by product type! The site features a section for SportChek admins to upload, edit & delete products. Admins accounts are protected by a MD5 powered password encryption system! Built with PHP, Mysql & SASS (photoshop for design assets)!</HTMl:5></p>
+                    <p class="projDesc">SportChek themed pure PHP custom content management system. Filter through 35 products pulled from a MySql database by product type! The site features a section for SportChek admins to upload, edit & delete products. Admins accounts are protected by a MD5 powered password encryption system! Built with PHP, Mysql & SASS (photoshop for design assets)!
+                        <br><br><a href="https://github.com/MalekFarag/php_custom_cms">Custom CMS - Github</a>
+                    </p>
                     <div class="parMocks">
                             <img src="images/portfolio/mock-cms.jpg" alt="Cms site mockup" class="projMockups openBox">
                     </div>                    
@@ -194,10 +196,10 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <div class="imagesDiv hideProj">
-                        <img src="images/portfolio/cordae1.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae2.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae3.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae4.jpg" class='openBox' alt="cordae">
+                        <img src="images/portfolio/cms-1.jpg" class='openBox' alt="Custom CMS">
+                        <img src="images/portfolio/cms-2.jpg" class='openBox' alt="Custom CMS">
+                        <img src="images/portfolio/cms-3.jpg" class='openBox' alt="Custom CMS">
+                        <img src="images/portfolio/cms-4.jpg" class='openBox' alt="Custom CMS">
                     </div>
                     <button class="more" href="#">More Info</button>
             </div>
@@ -206,7 +208,9 @@ if(isset($_POST['submit'])){
 
             <div class="proj">
                 <h3 class="projTitle">RHAC Promo Site</h3>
-                    <p class="projDesc">Micro site for Regional HIV/AIDS Connection - London to help the LGBTQ+ community have safer sex. The site features a clean front end and backend design. Users can contact RHAC members directly and even sign up for a newsletter. The backend system features an admin sections for RHAC employees which lets them post articles/news to the site. In addition users who sign up for the newsletter or use the contact form are tracked and put in the database for email marketing purposes! Built with Vue.js, PHP, MySql, SASS & HTML5!</p>
+                    <p class="projDesc">Micro site for Regional HIV/AIDS Connection - London to help the LGBTQ+ community have safer sex. The site features a clean front end and backend design. Users can contact RHAC members directly and even sign up for a newsletter. The backend system features an admin sections for RHAC employees which lets them post articles/news to the site. In addition users who sign up for the newsletter or use the contact form are tracked and put in the database for email marketing purposes! Built with Vue.js, PHP, MySql, SASS & HTML5!
+                        <br><br><a href="https://github.com/MalekFarag/farag_ilo_macdonald_shahfazlollahi_fip_">RHAC Promo Site - Github</a>
+                    </p>
                     <div class="parMocks">
                             <img src="images/portfolio/mock-fip.jpg" alt="fip site mockup" class="projMockups openBox">
                     </div>                    
@@ -219,10 +223,10 @@ if(isset($_POST['submit'])){
                     </div>
 
                     <div class="imagesDiv hideProj">
-                        <img src="images/portfolio/cordae1.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae2.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae3.jpg" class='openBox' alt="cordae">
-                        <img src="images/portfolio/cordae4.jpg" class='openBox' alt="cordae">
+                        <img src="images/portfolio/fip-1.jpg" class='openBox' alt="RHAC">
+                        <img src="images/portfolio/fip-2.jpg" class='openBox' alt="RHAC">
+                        <img src="images/portfolio/fip-3.jpg" class='openBox' alt="RHAC">
+                        <img src="images/portfolio/fip-4.jpg" class='openBox' alt="RHAC">
                     </div>
                     <button class="more" href="#">More Info</button>
             </div>
@@ -235,79 +239,148 @@ if(isset($_POST['submit'])){
             <div class="proj">
                 
                 <h3 class="projTitle">YBN Cordae Album Review Site</h3>
-                <p class='projDesc'>I made a album review site for my favorite hip-hop album of 2019, The Lost Boy by YBN Cordae. I used HTML, SASS for styling and after effects for the video background.</p>
-                <img class="projMock" src="images/portfolio/logo-cordae.png" alt="mockup openBox">
-                
-                <div class="imagesDiv hideProj">
-                    <img src="images/portfolio/cordae1.jpg" class='openBox' alt="cordae">
-                    <img src="images/portfolio/cordae2.jpg" class='openBox' alt="cordae">
-                    <img src="images/portfolio/cordae3.jpg" class='openBox' alt="cordae">
-                    <img src="images/portfolio/cordae4.jpg" class='openBox' alt="cordae">
-                </div>
+                <p class='projDesc'>I made a album review site for my favorite hip-hop album of 2019, The Lost Boy by YBN Cordae. I used HTML, SASS for styling and after effects for the video background.
+                    <br><br><a href="https://github.com/MalekFarag/farag_m_heroku_test">Cordae Site - Github</a>
+                </p>
+                <img class="projLogo" src="images/portfolio/logo-cordae.png" alt="mockup openBox">
+                <img class="projMock" src="images/portfolio/mock-cordae.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">Node.JS</label>
+                        <label class="app">SASS</label>
+                        <label class="app">HTML5</label>
+                        <label class="app">After Effects</label>
+                        <label class="app">JavaScript</label>
+                </div>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">Cliff Creatives Startup Site</h3>
-                <p class='projDesc'>Cliff Creatives is a fictional digital marketing agency. We created this site as an assignment to test our design skills.</p>
-                <img class="projMock" src="images/portfolio/logo-cliff.jpg" alt="mockup openBox">
-                <div class="imagesDiv hideProj">
-                    <img src="images/portfolio/cliff1.jpg" class='openBox' alt="cliff">
-                    <img src="images/portfolio/cliff2.jpg" class='openBox' alt="cliff">
-                    <img src="images/portfolio/cliff3.jpg" class='openBox' alt="cliff">
-                    <img src="images/portfolio/cliff4.jpg" class='openBox' alt="cliff">
-                </div>
+                <p class='projDesc'>Cliff Creatives is a fictional digital marketing agency. We created this site as an assignment to test our design skills. We created a functional site, aswell as a header video. Built with SASS, HTML5 & JavaScript. The video was created with stock footage and edited in after effects.
+                    <br><br><a href="https://github.com/MalekFarag/farag_m_ilo_c_shahfazlollahi_n_boot_camp">Cliff Creatives - Github</a>
+                </p>
+                <img class="projLogo" src="images/portfolio/logo-cliff.jpg" alt="mockup openBox">
+                <img class="projMock" src="images/portfolio/mock-cliff1.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">SASS</label>
+                        <label class="app">HTML5</label>
+                        <label class="app">After Effects</label>
+                        <label class="app">JavaScript</label>
+                </div>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">TRAA Site Redesign</h3>
-                <p class='projDesc'>Me and my partner Cindy Mena, were assigned to redesign the site of Thames River Anglers Association of London. Built with basic HTML, CSS and JavaScript. This was my first responsive site I've ever made!</p>
-                <img class="projMock" src="images/portfolio/logo-traa.svg" alt="mockup openBox">
+                <p class='projDesc'>My lab partner Cindy Mena and I, were assigned to redesign the site of Thames River Anglers Association of London. Built with basic HTML, CSS and JavaScript. This was my first responsive site I've ever made!
+                    <br><br><a href="https://github.com/MalekFarag/farag_m_mena_c_fip2">TRAA Redesign - Github</a>
+                </p>
+                <img class="projLogo" src="images/portfolio/logo-traa.svg" alt="mockup openBox">
+                <img class="projMock" src="images/portfolio/mock-traa.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">CSS</label>
+                        <label class="app">HTML5</label>
+                        <label class="app">Python</label>
+                        <label class="app">JavaScript</label>
+                </div>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">Hackathon 2020</h3>
-                <p class='projDesc'>Me and 3 other students participated in the IDP Hackathon. We had 24 hours to build a site including a php backend admin system of some sort. I built the front-end and backend including a working contact form and admin section + signin/signup. Site was built using SASS, PHP, PHPMailer & MYSQL.</p>
-                <img class="projMock" src="images/portfolio/logo-hack.svg" alt="mockup openBox">
+                <p class='projDesc'>Three student and I participated in the IDP Hackathon. We had 24 hours to build a site including a php backend admin system of some sort. I built the front-end and backend including a working contact form and admin section + signin/signup. Site was built using SASS, PHP, PHPMailer & MYSQL.<br><br>
+                    <a href="https://github.com/junior231/ilo_Macdonald_Nick_Farag_Kaur_Hackathon_2020">Hackathon 2020 - Github</a>
+                </p>
+                <img class="projLogo" src="images/portfolio/logo-hack.svg" alt="mockup openBox">
+                <img class="projMock" src="images/portfolio/mock-hack.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">Vue.JS</label>
+                        <label class="app">SASS</label>
+                        <label class="app">PHP</label>
+                        <label class="app">MySql</label>
+                        <label class="app">JavaScript</label>
+                </div>
             </div>
 
             <div class="proj">
-                <h3 class="projTitle">6ixTo519 Promo</h3>
-                <p class='projDesc'>6ixTo519 is a startup hip-hop promotional network in London Ontario. I was recruited as a co-op student to run their podcast YouTube channel. I created their logo and YouTube banner. We shot the podcast at Western Radio Studio B for a few episodes until my co-op period was over. Was a lot of fun and a great learning experience!</p>
-                <img class="projMock" src="images/portfolio/logo-6ix.svg" alt="mockup openBox">
+                <h3 class="projTitle">6ixTo519 Media</h3>
+                <p class='projDesc'>6ixTo519 is a startup hip-hop promotional network in London Ontario. I was recruited as a co-op student to run their podcast YouTube channel. I created their logo and YouTube banner. We shot the podcast at Western Radio Studio B for a few episodes until my co-op period was over. Was a lot of fun and a great learning experience!
+                    <br><br><a href="https://www.youtube.com/channel/UCASzubfFggff1A8nJm8tpsA">6ixTo519 - YouTube</a><br>
+                    <a href="https://www.instagram.com/6ixto519promo/">6ixTo519 - Instagram</a>
+                </p>
+                <img class="projLogo bruh" src="images/portfolio/logo-6ix.jpg" alt="mockup openBox">
+                <div class="appsUsed">
+                        <label class="app">Nikon D7100</label>
+                        <label class="app">After Effects</label>
+                        <label class="app">Premiere Pro</label>
+                        <label class="app">Illustrator</label>
+                        <label class="app">Photoshop</label>
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/hgTEXFBwpiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <button class="more" href="#">More</button>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">Gamer Link Chat App</h3>
-                <p class='projDesc'>The Gamer Link Chat App is a simple Socket.io application for gamers to party up and find other people to play with. It includes a anonymous login system that displays you and other players name in the activity tab. It allows you to connect very easily with other gamers so you never have to play alone again! (It's a real company that I used to test out socket.io)</p>
-                <img class="projMock" src="images/portfolio/logo-chat.jpg" alt="mockup openBox">
+                <p class='projDesc'>The Gamer Link Chat App is a simple Socket.io application for gamers to party up and find other people to play with. It includes a anonymous login system that displays you and other players name in the activity tab. It allows you to connect very easily with other gamers so you never have to play alone again! (It's a real company that I used to test out socket.io)
+                        <br><br><a href="https://github.com/MalekFarag/farag_m_chatApp">Chat App - Github</a>
+
+                </p>
+                <img class="projLogo" src="images/portfolio/logo-chat.jpg" alt="mockup openBox">
+                <img class="projMock" src="images/portfolio/mock-chat.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">Socket.io</label>
+                        <label class="app">Node.JS</label>
+                        <label class="app">JavaScript</label>
+                        <label class="app">SASS</label>
+                </div>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">Envious Album Cover + Photoshoot</h3>
-                <p class='projDesc'>Envious is a single by London, ON artists Insomniac BID & Iso. I was hired to design their cover art & do a promotional photoshoot for them. The song is sad and talks a lot about jealousy and envy. I wanted to art to reflect the overall feel and lyrics of the song. I built the frame using Illustrator. I used photoshop to color grade and put the art and photography together.</p>
-                <img class="projMock" src="images/portfolio/envious.jpg" alt="mockup openBox">
+                <p class='projDesc'>Envious is a single by London, ON artists Insomniac BID & Iso. I was hired to design their cover art & do a promotional photoshoot for them. The song is sad and talks a lot about jealousy and envy. I wanted to art to reflect the overall feel and lyrics of the song. I built the frame using Illustrator. I used photoshop to color grade and put the art and photography together.
+                    <br><br><a href="https://photos.google.com/share/AF1QipOSerTAYgr_pQ0PwRN4kYVkU_i4FCYv3YwBchO31AWcbiIn97PafKvu85kzWsRZ3w?key=MktXUHpuclZiMWFkMUdVT1ZRTWtKUjZWeTVZY0l3">Envious Photoshoot - Google Photos</a><br>
+                    <a href="https://open.spotify.com/album/3HlEWo9LcMQLDZYXwYkvRp">Envious - Spotify</a>
+                </p>
+                <img class="projLogo" src="images/portfolio/envious.jpg" alt="mockup openBox">
+                <img class="projMock cover" src="images/portfolio/mock-envious.jpg" alt="mockup openBox">
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">Nikon D7100</label>
+                        <label class="app">Illustrator</label>
+                        <label class="app">Photoshop</label>
+                </div>
             </div>
 
             <div class="proj">
                 <h3 class="projTitle">Rekthehalls Live Show Recap Video</h3>
-                <p class='projDesc'>RekTheHalls was a Live Hip-Hop show hosted by Lighter Juice (a local hip-hop media network). They brought me in to create a promotional recap video for their show. In addition to the video I took pictures of the artists and the crowd. The video is heavily edited and shows off my skills as a motion designer.</p>
-                <img class="projMock" src="images/portfolio/logo-rth.png" alt="mockup openBox">
+                <p class='projDesc'>RekTheHalls was a Live Hip-Hop show hosted by Lighter Juice (a local hip-hop media network). They brought me in to create a promotional recap video for their show. In addition to the video I took pictures of the artists and the crowd. The video is heavily edited and shows off my skills as a motion designer.
+                    <br><br><a href="https://photos.google.com/share/AF1QipMGHGfNoN8spyucUj_3PeH4bE129V59NEQ1p1gwFXzSaxTfl7PScf9L1EHEG0A8FA?key=LTBjcGNua1dMNnlyY3FRcVZrRnVlZXUtMXN1cHpB">RecTheHalls 2019 - Google Photos</a>
+                </p>
+                <img class="projLogo bruh" src="images/portfolio/logo-rth.png" alt="mockup openBox">
+                <div class="video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4utQsD4ntW8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <button class="more" href="#">More</button>
+                <div class="appsUsed">
+                        <label class="app">Nikon D7100</label>
+                        <label class="app">Premiere Pro</label>
+                        <label class="app">After Effects</label>
+                        <label class="app">Photoshop</label>
+                </div>
             </div>
         </div>
         </div>
     </section>
 
     <section class="secContact">
-        <h2>Contact</h2>
-        <?php echo !empty($message)? $message: ''; ?>
+        <h2>Like my work?</h2>
+        <p>It'd be great to hear from you!
+            <br><br><?php echo !empty($message)? $message: ''; ?></p>
         <form action="index.php" method="post">
             <input name='name' type="text" placeholder="Name" id='name' required>
             <input name='email' type="email" id='email' placeholder="Email" required>
@@ -320,9 +393,9 @@ if(isset($_POST['submit'])){
 
       <footer class="mainFooter">
         <div class="social">
-            <a href="https://github.com/malxvisuals"><i class="git fab fa-github-alt"></i></a>
+            <a href="https://github.com/MalekFarag"><i class="git fab fa-github-alt"></i></a>
             <a href="https://www.linkedin.com/in/malek-farag-1b6300182/"><i class="linkedin fab fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/malekfarag14/"><i class="insta fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/malxvisuals/"><i class="insta fab fa-instagram"></i></a>
         </div>
         <nav class="footNav">
             <ul class="navList">

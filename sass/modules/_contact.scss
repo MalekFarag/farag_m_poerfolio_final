@@ -11,6 +11,11 @@
         color: white;
         margin-bottom: 40px;
     }
+    p{
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
     form{
         @include flex-center(column);
         max-width: 650px;

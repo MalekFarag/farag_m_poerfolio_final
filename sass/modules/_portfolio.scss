@@ -112,23 +112,6 @@
         }
     }
 
-    .video{
-        width: 100%;
-
-        h2{
-            width: 95%;
-            margin: 30px auto;
-            text-align: center;
-            font-size: 26px;
-        }
-
-        video{
-            width: 98%;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-    }
-
     .allP{
         padding-bottom: 40px;
     }
@@ -155,6 +138,14 @@
             box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
             transition: all .3s ease;
 
+            .video{
+                display: none;
+            }
+
+            .appsUsed{
+                display: none;
+            }
+
             .xclose{
                 display: none;
             }
@@ -168,12 +159,16 @@
                 display: none;
             }
 
-            .projMock{
+            .projLogo{
                 width: 88%;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
+            }
+
+            .projMock{
+                display: none;
             }
 
             .more{
@@ -223,11 +218,24 @@
 
     text-align: center;
 
+    .video{
+        display: block;
+        width: 375px;
+        margin: 20px auto;
+        height: 211px;
+    }
+
     .dataDiv{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
         min-height: 100vh;
+    }
+
+    .appsUsed{
+        order: -1;
     }
     
 
@@ -243,27 +251,45 @@
     }
 
     .projTitle{
+        width: 100%;
         font-size: 28px;
         margin: 20px auto;
+        order: -3;
     }
 
     .projDesc{
         display: block;
         line-height: 20px;
-        max-width: 1200px;
+        width: 100%;
+        padding: 0 10px;
         margin: 0 auto;
         text-overflow: ellipsis;
+        order: -2;
+
+        a{
+            line-height: 30px;
+            color: rgb(61, 61, 61);
+            &:hover{
+                color: rgb(0, 0, 0);
+            }
+        }
     }
 
     .projMockups{
         max-width: 600px;
-        max-height: 100%;
     }
 
     .projMock{
         width: 100%;
         max-width: 600px;
         margin: 20px auto;
+    }
+    img{
+        max-height: 600px;
+    }
+
+    .projLogo{
+        display: none;
     }
     .appsUsed{
         width: 100%;
@@ -294,7 +320,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        overflow: auto;
+        overflow-x: auto;
         margin: 5px auto;
 
         img{
@@ -306,6 +332,8 @@
     .more{
         display: none;
     }
+
+    
 }
 
 .viewShow{
@@ -341,6 +369,27 @@
                 height: 175px;
             }
         }
+        .dataDiv{
+            .projDesc{
+            padding: 0 15%;
+            }
+            .cover{
+                width: inherit;
+                height: 500px;
+            }
+                
+            
+        }
+        
+
+        .bruh{
+            display: none !important;
+        }
+
+        .video{
+            width: 700px;
+            height: 394px;
+        }
     }
 }
 
@@ -366,11 +415,24 @@
     }
 
     .view{
+
+        .dataDiv{
+            .cover{
+                width: inherit;
+                height: 700px;
+            }
+        }
         .imagesDiv{
             img{
                 margin-right: 0px;
                 margin: 5px;
             }
+        }
+
+
+        .video{
+            width: 1200px;
+            height: 675px;
         }
     }
     }

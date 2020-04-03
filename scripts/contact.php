@@ -29,9 +29,8 @@ function contactMail($name, $email, $subject, $msg){
     <br><br><br>";
 
     if(!$mail->send()){
-        $message = $mail->ErrorInfo;
+        return $mail->ErrorInfo;
     }else{
-        $message = 'Thank you for the message!';
-        header('Location: submit.php');
+        return "We got your message. Thanks again for reaching out!";
     }
 }
