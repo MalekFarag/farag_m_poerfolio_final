@@ -1,0 +1,378 @@
+// portfolio sec
+.secPortfolio{
+    background: $main-background-color;
+    padding-top: 40px;
+
+    h2{
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .featProjWrap{
+        margin: 100px auto;
+
+        .hideProj{
+            display: none;
+        }
+
+        .vertDiv{
+            margin: 60px auto;
+            width: 3px;
+            height: 150px;
+            background-color: black;
+        }
+        .proj{
+            @include flex-center(column);
+            background-color: white;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+            justify-content: space-evenly;
+            text-align: center;
+            margin: 0 auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 700px;
+            .projTitle{
+                font-size: 24px;
+            }
+            .projDesc{
+                margin-top: 30px;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 22px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100%;
+                height: 42px;
+            }
+
+            .parMocks{
+                @include flex-center(row);
+                justify-content: space-evenly;
+                margin: 0 auto;
+            }
+            .projMockups{
+                margin-top: 20px;
+                max-width: 100%;
+            }
+            .appsUsed{
+                width: 100%;
+                max-width: 1200px;
+                margin-top: 20px;
+                @include flex-center(row);
+                justify-content: center;
+                flex-wrap: nowrap;
+                .app{
+                    cursor: pointer;
+                    font-size: 10px;
+                    color: white;
+                    background-color: rgba(0,0,0,.85);
+                    padding: 6px 8px;
+                    margin: 0 7px;
+                    border-radius: 20px;
+
+                    transition: all .18s ease;
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+            .projImages{
+                margin-top: 30px;
+                max-width: 900px;
+                @include flex-center(row);
+                justify-content: space-evenly !important;
+                flex-wrap: wrap;
+                align-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .pImg{
+                width: auto;
+                height: 90px;
+                margin: 5px;
+            }
+            .more{
+                font-family: 'Montserrat', sans-serif;
+                color: rgba(0, 0, 0, 0.9);
+                background: rgba(0, 0, 0, 0);
+                border: none;
+                margin-top: 30px;
+                padding-top: 30px;
+                border-top: solid 3px rgba(0, 0, 0, 0.9);
+                text-decoration: none;
+                font-weight: bolder;
+                transition: all .2s ease;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.9);
+                }
+            }
+        }
+    }
+
+    .video{
+        width: 100%;
+
+        h2{
+            width: 95%;
+            margin: 30px auto;
+            text-align: center;
+            font-size: 26px;
+        }
+
+        video{
+            width: 98%;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+    }
+
+    .allP{
+        padding-bottom: 40px;
+    }
+
+    .allProjs{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        margin: 50px auto;
+        width: 100%;
+
+        
+
+        .proj{
+
+            margin: 3px;
+            width: 37%;
+            padding: 15px 20px;
+            padding-bottom: 320px;
+            text-align: center;
+
+            background-color: white;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+            transition: all .3s ease;
+
+            .xclose{
+                display: none;
+            }
+
+            .projTitle{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .projDesc{
+                display: none;
+            }
+
+            .projMock{
+                width: 88%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            .more{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                color: rgba(0, 0, 0, 0.9);
+                font-family: 'Montserrat', sans-serif;
+                background: rgba(0, 0, 0, 0);
+                border: none;
+                padding-top: 20px;
+                border-top: solid 3px rgba(0, 0, 0, 0.9);
+                text-decoration: none;
+                font-weight: bolder;
+                transition: all .2s ease;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: 0px 8px 0px -5px rgba(0,0,0,0.9);
+                }
+            }
+            
+            .hideProj{
+                display: none;
+            }
+        }
+    }
+}
+
+.view{
+    opacity: 0;
+    pointer-events: none;
+
+
+    width: 100%;
+    min-height: 100vh;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+
+    transition: all .2s ease;
+
+    text-align: center;
+
+    .dataDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+
+    .xclose{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        background-color: white;
+        top: 65px;
+        right: 15px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .projTitle{
+        font-size: 28px;
+        margin: 20px auto;
+    }
+
+    .projDesc{
+        display: block;
+        line-height: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-overflow: ellipsis;
+    }
+
+    .projMockups{
+        max-width: 600px;
+        max-height: 100%;
+    }
+
+    .projMock{
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .appsUsed{
+        width: 100%;
+        margin-top: 20px;
+        @include flex-center(row);
+        justify-content: center;
+        flex-wrap: nowrap;
+        .app{
+            cursor: pointer;
+            font-size: 10px;
+            color: white;
+            background-color: rgba(0,0,0,.85);
+            padding: 6px 8px;
+            margin: 0 7px;
+            border-radius: 20px;
+
+            transition: all .18s ease;
+            &:hover{
+                opacity: .7;
+            }
+        }
+    }
+    .imagesDiv{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: auto;
+        margin: 5px auto;
+
+        img{
+            height: 125px;
+            margin-right: 3px;
+        }
+    }
+
+    .more{
+        display: none;
+    }
+}
+
+.viewShow{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media only screen and (min-width: 700px){
+    .secPortfolio{
+        h2{
+            font-size: 30px;
+        }
+
+        .allProjsWrap{
+            background-color: whitesmoke;
+            padding: 75px 0;
+        }
+        .allProjs{
+            max-width: 1400px;
+            .proj{
+                max-width: 20%;
+                margin: 10px auto;
+                padding-bottom: 375px;
+            }
+        }
+    }
+
+    .view{
+        top: 0;
+        .imagesDiv{
+            justify-content: center;
+            img{
+                height: 175px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1230px){
+    .secPortfolio{
+        .featProjWrap{
+            max-width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .vertDiv{
+            display: none;
+        }
+        .proj{
+            max-width: 500px !important;
+        }
+    }
+
+    .allProjs{
+        .proj{
+            padding-bottom: 425px;
+        }
+    }
+
+    .view{
+        .imagesDiv{
+            img{
+                margin-right: 0px;
+                margin: 5px;
+            }
+        }
+    }
+    }
+    
+}
