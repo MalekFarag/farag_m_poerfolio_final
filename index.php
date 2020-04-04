@@ -197,12 +197,12 @@ if(isset($_POST['submit'])){
                             <label class="app">SASS</label>
                     </div>
 
-                    <div class="imagesDiv hideProj">
+                    <!-- <div class="imagesDiv hideProj">
                         <img src="images/portfolio/cms-1.jpg" class='openBox' alt="Custom CMS">
                         <img src="images/portfolio/cms-2.jpg" class='openBox' alt="Custom CMS">
                         <img src="images/portfolio/cms-3.jpg" class='openBox' alt="Custom CMS">
                         <img src="images/portfolio/cms-4.jpg" class='openBox' alt="Custom CMS">
-                    </div>
+                    </div> -->
                     <button class="more" href="#">More Info</button>
             </div>
             
@@ -224,12 +224,12 @@ if(isset($_POST['submit'])){
                             <label class="app">HTML5</label>
                     </div>
 
-                    <div class="imagesDiv hideProj">
+                    <!-- <div class="imagesDiv hideProj">
                         <img src="images/portfolio/fip-1.jpg" class='openBox' alt="RHAC">
                         <img src="images/portfolio/fip-2.jpg" class='openBox' alt="RHAC">
                         <img src="images/portfolio/fip-3.jpg" class='openBox' alt="RHAC">
                         <img src="images/portfolio/fip-4.jpg" class='openBox' alt="RHAC">
-                    </div>
+                    </div> -->
                     <button class="more" href="#">More Info</button>
             </div>
         </div>
