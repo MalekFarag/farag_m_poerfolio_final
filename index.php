@@ -123,7 +123,9 @@ if(isset($_POST['submit'])){
             <img class="portrait" src="images/me.jpg" alt="Portrait of Malek Farag">
             <div class="aboutDesc">
                 <p class="title">Malek Farag</p>
-                <p class="desc">Passionate web developer and designer from London, Ontario. Creating fast, reliable applications for real people.</p>
+                <p class="desc">Passionate web developer and designer from London, Ontario. Creating fast, reliable applications for real people. <br>
+                <a href="https://drive.google.com/file/d/1ZdcpSnkQcREmq5O621OuTU7zFeHYE10e/view?usp=sharing">my resume</a>
+            </p>
             </div>
         </div>
 
