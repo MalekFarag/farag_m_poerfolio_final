@@ -13,11 +13,11 @@ function contactMail($name, $email, $subject, $msg){
     $mail->Port = 465;
     $mail->SMTPAuth=true;
 
-    $mail->Username='faragmalek14@gmail.com';
-    $mail->Password='Malooky14'; 
+    $mail->Username='company@gmail.com';
+    $mail->Password='company'; 
 
     $mail->addAddress($email);
-    $mail->setFrom('faragmalek14@gmail.com');
+    $mail->setFrom('company@gmail.com');
     
 
     $mail->isHTML(true);
